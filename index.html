@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="asset/ccs/materialize.min.css">
+<link rel="stylesheet" href="asset/ccs/main.css">
+<link rel="stylesheet" href="asset/ccs/grid.css">
+<link rel="stylesheet" href="asset/ccs/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+    <div class="contenedorGeneral">
+        <header class="encabezado">
+            <nav>
+                GARNACHERIAS
+            </nav>
+        </header>
+        <section class="contenedor">
+            <div id="map"></div>
+            <div class="barra-busqueda"></div>
+            <div class="contenedor-restaurantes">
+                <div class="tarjeta-restaurante">
+                    <div class="logo-restaurante">
+                         <i class="material-icons">room</i>
+                    </div>
+                    <div class="informacion-restaurante">
+                        <h5 class="nombre-restaurante">BLACK DOG PIZZA</h5>
+                        <p class="direccion">Parque España 3, Roma Nte., 06700 Ciudad de México, CDMX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA1bWEajuET9MALlrlZSZx5UI9pud7pTQ&callback=initMap">
+    </script>
+<script src="asset/js/jquery-3.2.1.min.js"></script>
+<script src="asset/js/materialize.min.js"></script>
+<script src="asset/js/app.js"></script>
+
+</html>
