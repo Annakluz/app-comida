@@ -1,5 +1,10 @@
-#map {
+.map {
    width: 40vw;
     height: 40vw;
      
+}
+
+.nombre-restaurante{
+    cursor: pointer;
+   
 }
