@@ -33,6 +33,7 @@ var plantillaRestaurante =
 function cargarPagina() {
     obtenerUbicacionActual();
     $(document).on("click",".nombre-restaurante",cambiarUbicacion);
+    $("#search-form").submit(filtrarContactos);
 
 }
 
@@ -94,8 +95,14 @@ var mostrarRestaurantes = function (restaurantes) {
 
 
 
-
-
+function filtrarContactos(e){
+    e.preventDefault();
+	var criterioBusqueda = $("#search").val().toLowerCase();
+	var contactosFiltrados = restaurantes.filter(function (restaurantes) {
+		return restaurantes.nombre.toLowerCase().indexOf(criterioBusqueda) >= 0;
+});
+mostrarRestaurantes(contactosFiltrados);
+};
 
 /*function initMap() {
     var uluru = {
